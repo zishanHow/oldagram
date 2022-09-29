@@ -96,4 +96,5 @@ section .user-avatar {
 
 .input-imgs:hover {
     background-color: red;
+    border-radius: 4px;
 }
