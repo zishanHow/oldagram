@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* html, body {
+    margin: 0;
+    padding: 0;
+} */
+
+body {
+    background-color: #C6C6C6;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+}
+
+/* typography style */
+.like-count {
+    padding-left: 12px;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.tags {
+    padding: 15px 0 13px 12px;
+    font-size: 13px;
+}
+
+.tags .strong {
+    font-weight: 700;
+}
+
+section .timeline-user {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+section .timeline-user-location {
+    font-size: 12px;
+}
+
+/* layout style */
+.container {
+    width: 375px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+}
+
+
+.timeline-user-info {
+    display: flex;
+    align-items: center;
+}
+
+section {
+    border-bottom: 25px solid #EDEDED;
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+
+/* image styles */
+img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-logo {
+    width: 127px;
+    margin-left: 15px;
+}
+
+.user-avatar {
+    width: 34px;
+    border-radius: 50%;
+}
+
+header .user-avatar {
+    margin: 15px;
+}
+
+section .user-avatar {
+    margin: 10px;
+}
+
+.input-logo {
+    width: 24px;
+    margin: 11px 15px 1px 12px;
+}
+
+.input-logo:hover {
+    background-color: red;
+}
