@@ -75,7 +75,9 @@ main.innerHTML = feedPost
 // increment and decrement like count. 
 let heartIcons = document.getElementsByClassName("heart")
 let heartEl = document.getElementsByClassName("likes")
+let timelineUserPost = document.getElementsByClassName("timeline-user-post")
 
+//  for heart button. click to like it
 for (let i = 0; i < heartIcons.length; i++) {
     heartIcons[i].addEventListener("click", function () {
         if (posts[i].liked == false) {
@@ -88,11 +90,27 @@ for (let i = 0; i < heartIcons.length; i++) {
     })
 }
 
+//  for post on feed. double clicked to liked it. 
+for (let i = 0; i < timelineUserPost.length; i++) {
+    timelineUserPost[i].addEventListener("dblclick", function () {
+        if (posts[i].liked == false) {
+            like(i)
+            rerender(heartEl[i], i)
+        } else if (posts[i].liked == true) {
+            removeLike(i)
+            rerender(heartEl[i], i)
+        }
+    })
+}
+
+// increment like (+)
 function like(i) {
     posts[i].liked = true
     posts[i].likes += 1
 }
 
+
+// decrement like (-)
 function removeLike(i) {
     posts[i].liked = false
     posts[i].likes -= 1
