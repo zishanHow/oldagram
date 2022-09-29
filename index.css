@@ -4,11 +4,6 @@
     box-sizing: border-box;
 }
 
-/* html, body {
-    margin: 0;
-    padding: 0;
-} */
-
 body {
     background-color: #C6C6C6;
     font-family: 'Source Sans Pro', sans-serif;
@@ -93,11 +88,11 @@ section .user-avatar {
     margin: 10px;
 }
 
-.input-logo {
+.input-imgs {
     width: 24px;
     margin: 11px 15px 1px 12px;
 }
 
-.input-logo:hover {
+.input-imgs:hover {
     background-color: red;
 }

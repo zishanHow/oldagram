@@ -57,12 +57,12 @@ for (let i = 0; i < posts.length; i++) {
                 <img class="timeline-user-post" src="${posts[i].post}" alt="an picture post of ${posts[i].name}">
 
 
-                <img class="input-logo heart" src="${heart}" alt="like button">
-                <img class="input-logo" src="${comment}" alt="comment button">
-                <img class="input-logo" src="${dm}" alt="dm button">
+                <img class="input-imgs heart" src="${heart}" alt="like button">
+                <img class="input-imgs" src="${comment}" alt="comment button">
+                <img class="input-imgs" src="${dm}" alt="dm button">
 
 
-                <p class="like-count likes" id="heart">${posts[i].likes} Likes</p>
+                <p class="like-count likes">${posts[i].likes} Likes</p>
                 <p class="tags"><span class="strong">${posts[i].username}</span> ${posts[i].comment}</p>
 
             </section>
@@ -71,6 +71,8 @@ for (let i = 0; i < posts.length; i++) {
 main.innerHTML = feedPost
 
 
+
+// increment and decrement like count. 
 let heartIcons = document.getElementsByClassName("heart")
 let heartEl = document.getElementsByClassName("likes")
 
